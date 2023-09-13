@@ -33,6 +33,7 @@ public class ListRetriever{
         LinkedHashMap<String, String> passwordMap = manager.getMap();
         String listString = "";
 
+        // create a set of the passwords then use the built in function to alphabetically sort
         Set<String> services = passwordMap.keySet();
         List<String> serviceList = new ArrayList<String>(services);
         Collections.sort(serviceList);

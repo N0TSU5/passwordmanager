@@ -4,6 +4,8 @@ import java.util.LinkedHashMap;
 
 public class ListModifier {
     private Manager manager;
+
+    // access the validator function
     private Validator validator = new Validator();
 
     public ListModifier(Manager manager) {
@@ -24,6 +26,7 @@ public class ListModifier {
         manager.setMap(passwordMap);
     }
 
+    // hashmap automatically updates the value if the key exists already
     public void updatePassword(String service, String password) {
         addPassword(service, password);
     }
